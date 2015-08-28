@@ -1,0 +1,2 @@
+all:
+	gcc -g -o ft_ls readdir.c ft_*.c -I.. -L.. -lft
