@@ -3,10 +3,13 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define NBROFTESTS 4
+
 int	test_bzero(void) {
-	struct {const char* s; size_t n;} t[3] = {
+	struct {const char* s; size_t n;} t[NBROFTESTS] = {
 		{"hello", 5},
 		{"", 0},
+		{NULL, 0},
 		{"hello", 3}};
 	void	*s1 = NULL, *s2 = NULL;
 
